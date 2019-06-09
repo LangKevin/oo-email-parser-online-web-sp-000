@@ -10,6 +10,7 @@ class EmailParser
     @email = emails
     # @@emails << emails
     @@emails = @email.split /[," "]/
+    @@emails.delete("")
   end
   def parse
     @@emails
