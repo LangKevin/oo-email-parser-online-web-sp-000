@@ -9,7 +9,7 @@ class EmailParser
   def initialize(emails)
     @email = emails
     # @@emails << emails
-    @@emails = @email.split /[ ," "]/
+    @@emails = @email.split /[," "]/
   end
   def parse
     @@emails
