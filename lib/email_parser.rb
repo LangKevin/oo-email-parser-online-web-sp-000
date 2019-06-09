@@ -11,9 +11,9 @@ class EmailParser
     # @@emails << emails
     @@emails = @email.split /[," "]/
     @@emails.delete("")
-    @@emails.uniq
+
   end
   def parse
-    @@emails
+    @@emails.uniq
   end
 end
